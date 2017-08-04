@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wikipedia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="wikipedia.js"></script>
+    <link rel="stylesheet" type="text/css" href="wikipedia.css">
+
+</head>
+
+<body>
+    <div class="page-container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Wikipedia</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Article</a></li>
+            </ul>
+        
+        </nav>
+        <div class="space"></div>
+        <div class="block">
+            <h1 class="text-center">Search Wikipedia</h1>
+            <input class="form-control" id="searchBox">
+            <br>
+            <button id="search" type="button" class="btn btn-primary" onclick="getData()">Search</button>
+        </div>
+
+        <div class="space"></div>
+        <div class="block">
+            <h1 class="text-center">Search Results</h1>
+            <br>
+            <table id="results_table"  class="table table-bordered" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <td>Title</td>
+                        <td>Extract</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>  
+        <div class="space"></div>
+    </div>
+</body>
+</html>
